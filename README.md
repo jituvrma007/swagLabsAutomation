@@ -42,6 +42,7 @@ git clone https://github.com/jituvrma007/swagLabsAutomation.git
 $ npm install
 ```
 ### Running the tests locally
+    ==> Navigate to the cloned directory, then execute below command
 - Running the tests in headless mode with Chrome
 ```
 $ npm run cy:run-chrome
@@ -52,7 +53,9 @@ $ npm run cy:open
 ```
 
 ### Running the tests through Docker
-- Running the tests from one single command
+    ==> Navigate to the cloned directory, then execute below command
+
+- Running the tests from one single command 
 ```
 $ docker run -it -v ${PWD}:/cypress -w /cypress cypress/included:10.1.0 --config-file cypress.config.js  --browser chrome
 ```
