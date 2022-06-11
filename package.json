@@ -1,0 +1,17 @@
+{
+  "name": "swag-labs-automation",
+  "version": "1.0.0",
+  "description": "It is a test assignment for Swag Labs cypress automation",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-chrome": "cypress run --browser chrome"
+  },
+  "author": "Jagjit Verma",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.0.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  }
+}
