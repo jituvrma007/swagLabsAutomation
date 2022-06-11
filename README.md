@@ -3,7 +3,7 @@ This is a sample automation testing project for a web application using Cypress.
 
 ### Project structure
 ```
-.
+
 ├── cypress
 │   ├── e2e
 │   │   ├── swagLabsTestCases.cy.js
@@ -24,6 +24,7 @@ This is a sample automation testing project for a web application using Cypress.
 │   │   └── ...
 ├── node_modules
 └── cypress-config.js
+└── Dockerfile
 └── package-lock.json
 └── package.json
 ```
@@ -45,17 +46,17 @@ $ npm install
 ```
 $ npm run cy:run-chrome
 ```
-- clsFrom Cypress Ui Runner:
+- Running from Cypress Ui Runner:
 ```
 $ npm run cy:open
 ```
 
 ### Running the tests through Docker
-- Running the tests from single command
+- Running the tests from one single command
 ```
 $ docker run -it -v ${PWD}:/cypress -w /cypress cypress/included:10.1.0 --config-file cypress.config.js  --browser chrome
 ```
-- Run from Dockerfile: i.e - building an image locally then running
+- Running from Dockerfile: i.e - building the image locally, then running the test cases inside the container
 ```
 docker build -t swaglabsautomation:1.0.0 .
 docker run -i -v swaglabsautomation -t swaglabsautomation:1.0.0 --config-file cypress.config.js
