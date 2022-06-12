@@ -8,7 +8,7 @@ const   homePage = require('../pageObjects/homePage'),
 describe('Test cases for "Swag Labs" portal', () => {
        
     beforeEach(() => {
-        homePage.open()
+        homePage.open() 
         homePage.performLoginUsingCredentials(loginCredentials.username, loginCredentials.password);
     });
        
