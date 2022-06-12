@@ -18,13 +18,11 @@ class productListingPage extends basePage{
         return this.sortSelectorDropDown.select(option, {force: true});
     }
 
+    //Verifying the given PriceList is same as we find from the portal
     checkProductPricesAreInLowToHighOrder(priceList){
-        
         this.displayedPriceOfProduct.then((displayedPriceOfProduct) => {
             cy.wrap(displayedPriceOfProduct.text()).should('equal', priceList) 
         })
-
-        
     }
 
 }
