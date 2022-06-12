@@ -5,7 +5,8 @@ class homePage extends basePage{
     get usernameInputBox() { return cy.get('#user-name'); }
     get passwordInputBox() { return cy.get('#password'); }
     get LoginButton() { return cy.get('#login-button'); }
-  
+    
+    //Open the baseUrl, configured under cypress.config.js
     open(){
         cy.visit('/');
     }
